@@ -20,6 +20,9 @@ const libra = 6.42
     currency: "BRL",
   }).format(inputReais);
 
+ 
+
+
 
 if(select.value === "US$ Dólar Americano")
 
@@ -43,6 +46,9 @@ if(select.value === "US$ Dólar Americano")
     currency: "GBP",
   }).format(inputReais / libra);
 
+
+
+  
   
 };
 
@@ -51,6 +57,7 @@ if(select.value === "US$ Dólar Americano")
 changeCurrency = () => {
   const textChange = document.getElementById("text-value");
   const imgChange = document.getElementById("img-change");
+
 
   if (select.value === "€ Euro") {
     textChange.innerHTML = "Euro";
@@ -67,13 +74,15 @@ changeCurrency = () => {
     imgChange.src = "./img/libra.png"
   }
 
- 
-    
-    
 
-
+   
   convertValues()
 };
+
+
+
+
+
 
 // criando uma cadeia de evento, onde a cada click a função nos trás o valor convertido.
 button.addEventListener("click", convertValues)
