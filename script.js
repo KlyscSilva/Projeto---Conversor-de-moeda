@@ -1,5 +1,6 @@
 const button = document.getElementById("convert-button"); // chamei a varievel button pelo id do html
 const select = document.getElementById("select-value");
+const form = document.getElementById("enter-evento")
 
 const convertValues = () => {
   // criei uma função para ser chamada no addevent
@@ -85,5 +86,7 @@ changeCurrency = () => {
 
 
 // criando uma cadeia de evento, onde a cada click a função nos trás o valor convertido.
-button.addEventListener("click", convertValues)
-select.addEventListener("change", changeCurrency) // evento de troca de dolar para euro
+button.addEventListener("click", convertValues,)
+select.addEventListener("change", changeCurrency,) // evento de troca de dolar para euro
+
+form.addEventListener("keyup",convertValues, changeCurrency)
